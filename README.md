@@ -7,7 +7,7 @@ Veja o site: [Clique aqui](https://cledsonb.github.io/BlogShadesOfBlueScan)
 Blog para a publicação de mangás, manhwas, manhua, webcomic e webtoon traduzidos de fã para fã
 
 ### Integrantes
-
+- *Anna* : Limpeza
 - *CLedsonB* : Dev Front-End
 - *Jully* : Revisão, Edição
 - *Lui* : Desenho, Limpeza
