@@ -1,6 +1,8 @@
-# BlogShadesOfBlueScan
+# Blog Shades Of Blue Scan
 
-Veja o site: [Clique aqui](https://cledsonb.github.io/BlogShadesOfBlueScan)
+## Demostração
+
+### Veja o site: [Clique aqui](https://cledsonb.github.io/BlogShadesOfBlueScan)
 
 ## Propósito
 
