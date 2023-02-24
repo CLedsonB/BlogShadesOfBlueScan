@@ -1,3 +1,5 @@
+/* PADRONIZAÇÃO DA ESTILIZAÇÃO */
+
 body, main, footer,
 span, img, a,
 div, input {
@@ -8,19 +10,60 @@ div, input {
     text-decoration: none;    
 }
 
+
 /* Estilos para dispositivos móveis */
-.conteudo {
-    width: 100vw;
-    height: 100vh;
-    font-size: 16px;
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
-div.conteudo div.barraLateral {
-    display: flex;
-    align-items: center;
+
+/*  NAVEGAÇÃO LATERAL */
+
+nav {
+    background: #1919c4;
+    height: 80px;
+    width: 100%;
 }
-.barraLateral .lupa {
-    background-color: aqua;
+nav ul {
+    float: right;
+    margin-right: 20px;
 }
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a {
+    color: #ebe9e9;
+    font-size: 17px;
+    padding: 10px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active, a:hover {
+    background: #201616;
+    transition: .5s;
+}
+.checkbtn {
+    font-size: 30px;
+    color: #ebe9e9;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    /* display: none; */
+}
+
+/* ESPACO PARA LOGO */
+
+label.logo {
+    color: #ebe9e9;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+
 
 
   /* Estilos para tablet */
@@ -29,6 +72,10 @@ div.conteudo div.barraLateral {
         font-size: 18px;
     }
 }
+
+
+
+
 
 /* Estilos para notebook */
 @media only screen and (min-width: 1024px) {
