@@ -1,0 +1,19 @@
+.color1 { #1305fb };
+.color2 { #0e04e9 };
+.color3 { #0903d7 };
+.color4 { #0501c4 };
+.color5 { #0000b2 };
+
+
+.color1 { #3419e7 };
+.color2 { #2713c4 };
+.color3 { #1a0ca1 };
+.color4 { #0d067e };
+.color5 { #00005b };
+
+.color1 { #0100ff };
+.color2 { #0100d2 };
+.color3 { #0100a6 };
+.color4 { #000079 };
+.color5 { #00004d };
+
