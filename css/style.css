@@ -22,35 +22,45 @@ input, label {
 
 
 /* Estilos para dispositivos móveis */
+
 body {
     background-color: var(--corFundo);
     color: var(--corLetra);
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* BARRA DE PESQUISA*/
+
 #campoPesquisa {
   position: fixed;
   display: flex;
   width: 100%;
-  top: -120px;
+  height: 80px;
+  top: -100px;
   left: 0px;
-  background: #3344dd;
+  padding: 0 20px;
+  align-items: center;
+  background: #5665ed;
   transition: all .5s;
 }
 
 .barraPesquisa {
-  width: 75%;
+  width:80%;
   height: 30px;
   top: 50px;
-  padding: 20px 0;
+  padding: 20px;
 }
   
 .botaoPesquisa {
   background: #3344dd;
-  height: 20px;
-  padding: 20px 0px;
-  align-content: center;
- }
+  color: var(--corLetra);
+  border: none;
+  height: 44px;
+  width: auto;
+  padding: 15px 2px;
+  text-align: center;
+  align-items: center;
+}
 
 /*  NAVEGAÇÃO LATERAL */
 
@@ -72,14 +82,17 @@ nav ul {
     height: 100vh;
     background: var(--corPainel);
     top: 0px;
-    left: -400px;
+    left: -600px;
     text-align: center;
     transition: all .5s;
 }
+
 nav ul li {
     display: block;
     margin: 50px 0;
+    padding-left: 90px;
     line-height: 30px;
+    align-items: center;
 }
 nav ul li a {
     color: #ebe9e9;
@@ -92,6 +105,15 @@ a.active, a:hover {
     background: none;
     color: (--corLinkVisitado);
 }
+
+/*  TRANSIÇÕES */
+
+/*  -- 1 -- */
+
+#Inav, #Ipesquisa{
+  display: none;
+}
+
 #Lnav {
     font-size: 25px;
     float: right;
@@ -101,14 +123,22 @@ a.active, a:hover {
     display: block;
 }
 
-#Lpesquisa {
-  display: block;
-  cursor: pointer;
+#Inav:checked ~ ul {
+  left: -120px;
 }
 
-#Inav, #Ipesquisa {
-  display: none;
-} 
+/*  -- 2 -- */
+/* 
+ #Lpesquisa {
+  display: flex;
+  cursor: pointer;
+  margin: 10px;
+}
+ 
+#Ipesquisa:checked ~ #campoPesquisa { 
+    top: 20px;
+} */
+
 
 /* ESPACO PARA LOGO */
 
@@ -117,25 +147,48 @@ label.logo {
     color: #ebe9e9;
     font-size: 30px;
     line-height: 100px;
-    padding: 0 100px;
+    padding: 0 85px;
     font-weight: bold;
-}
-#Ipesquisa:checked ~ #campoPesquisa { 
-    top: 20px;
-}
-
-#Inav:checked ~ ul {
-    left: -100px;
+    align-items: center;
+    background-color: #1d075f;
 }
 
+.conteudo {
+  margin: 40px 20px;
+  font-size: 16px;
+}
+
+/*   REPONSIVIDADE  *
+ *                  *
+ * P  0px - 766px   *
+ * M 767px - 1022px *
+ * G 1023px -  +++  *
+ *                  *
+ ********************/
 
 
   /* Estilos para tablet */
-@media only screen and (min-width: 768px) {
+
+  @media only screen and (min-width: 767px) {
+  #Lnav {
+    display: none;
+  }
     label.logo {
       font-size: 30px;
-      pading-left: 50px;
+      padding-left: 50px;
     }
+    nav ul {
+      display: flex;
+      float: right;
+      height: 100px;
+      left: 100px;
+      font-size: 18px;
+    }
+    nav ul li {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+  }
     nav ul li a {
       font-size: 18px;
     }
@@ -143,7 +196,8 @@ label.logo {
 
 
 /* Estilos para notebook */
-@media only screen and (min-width: 1024px) {
+
+@media only screen and (min-width: 1023px) {
     #Lnav {
       display: none;
     }
@@ -165,23 +219,5 @@ label.logo {
       transition: .5s;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
