@@ -235,14 +235,13 @@ a:active, a:hover {
       padding-left: 50px;
     }
     nav ul {
-      position: absolute;
-      display: flex;
+      position: fixed;
+      display: block;
       float: right;
-      margin-top: 30px;
-      padding-bottom: 0;
-      height: 100px;
-      width: 100%;
-      left: 200px;
+      top: 99px;
+      height: 72px;
+      width: 60%;
+      left: 220px;
       font-size: 18px;
       
     }
