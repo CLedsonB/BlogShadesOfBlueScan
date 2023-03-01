@@ -22,23 +22,20 @@
 </head>
 
 <body>
-	<div id="campoPesquisa">
+ <input type="checkbox" id="Ipesquisa">
+	<div class="campoPesquisa">
  	  	<input type="text" placeholder="Pesquisar por Titulo ou Autor..." class="barraPesquisa">
  	  	<button class="botaoPesquisa">Pesquisar</button>
   </div>
-  
-  <input type="checkbox" id="Ipesquisa">
-  
 	<nav>
 		<input type="checkbox" id="Inav">
-		
 		<label for="Inav" class="hamburger hamburger--stand" onclick="cliqueUm()" id="Lnav">
 			<span class="hamburger-box">
 			<span class="hamburger-inner"></span>
 			</span>
 		</label>
 		<label for="Ipesquisa" id="Lpesquisa">
-	<!-- <img src="icons/lupa.png" class="lupa" alt="Buscar"> -->
+	    <img src="icons/lupa.png" class="lupa" alt="Buscar">
 		</label>
 		
 		<label class="logo">Logo</label>
@@ -49,12 +46,13 @@
 			  <summary>
 			    <a href="#">mangás</a>
 			  </summary>
-			  <p class="subcategoria"><a href="#">Todos</a></p>
-			  <p class="subcategoria"><a href="#">Em andamento</a></p>
-			  <p class="subcategoria"><a href="#">Concluidos</a></p>
+			  <div class="bordaSubmenu">
+   	    <p class="subcategoria"><a href="#">Todos</a></p>
+		  	   <p class="subcategoria"><a href="#">Em andamento</a></p>
+		  	   <p class="subcategoria"><a href="#">Concluidos</a></p>
+		  	 </div>
 			  </details>
 			</li>
-			<li><a href="#">manhua</a></li>
 			<li><a href="#">Sobre Nós</a></li>
 			<li><a href="#">Entre em Contato</a></li>
 		</ul>

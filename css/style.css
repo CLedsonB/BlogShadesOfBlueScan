@@ -49,13 +49,17 @@ label.logo {
 }
 
 .lupa {
+  position: relative;
+  top: -4px;
+  left: -5px;
   width: 30px;
+  height: 30px;
 }
 
 
 /* BARRA DE PESQUISA*/
 
-#campoPesquisa {
+.campoPesquisa {
   position: absolute;
   display: flex;
   width: 100%;
@@ -154,16 +158,20 @@ a:active, a:hover {
 
 #Lpesquisa {
   float: right;
-  margin: 40px 10px ;
-  width: 50px;
-  padding: 5px;
-  border-radius: 100%;
+  text-align: center;  
+  margin: 25px 5px;
+  width: 45px;
+  height: 45px;
+  padding: 12px;
+  border-radius: 50%;
   cursor: pointer;
   background-color: #ffffff;
 }
 
-#Ipesquisa:checked ~ #campoPesquisa { 
-    top: 100px;
+#Ipesquisa:checked ~ .campoPesquisa{
+    top: 10px;
+    position: static;
+    transition: all .5s;
 }
 
 /* UNIDADE DE MANGA */
@@ -199,7 +207,7 @@ a:active, a:hover {
 .rodape {
   width: 100%;
   background-color: var(--fundoRodape);
-  border: 2px solid green;
+  border: 2px solid var(--fundoRodape);  
 }
 
 /*   REPONSIVIDADE  *
@@ -214,9 +222,14 @@ a:active, a:hover {
   /* Estilos para tablet */
 
   @media only screen and (min-width: 767px) {
-  #Lnav {
-    display: none;
-  }
+    #Lnav {
+      display: none;
+    }
+    #Lpesquisa {
+      float: left;
+      position: absolute;
+      left: 150px;
+    }
     label.logo {
       font-size: 30px;
       padding-left: 50px;
@@ -225,9 +238,13 @@ a:active, a:hover {
       position: absolute;
       display: flex;
       float: right;
+      margin-top: 30px;
+      padding-bottom: 0;
       height: 100px;
-      left: 150px;
+      width: 100%;
+      left: 200px;
       font-size: 18px;
+      
     }
     nav ul li {
       display: inline-block;
@@ -236,6 +253,15 @@ a:active, a:hover {
   }
     nav ul li a {
       font-size: 18px;
+    }
+    .subcategoria {
+      margin: 10px 0;
+    }
+    details {
+      background: var(--fundoPainel); 
+    }
+    .bordaSubmenu {
+      border: 1px solid #6a78ff;
     }
 }
 
