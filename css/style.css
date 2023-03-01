@@ -1,7 +1,7 @@
 /* PADRONIZAÇÃO DA ESTILIZAÇÃO */
 
 body, main, footer,
-span, img, a, h1,
+span, img, a, h1, h3,
 div, input, ul, li, button,
 input, label {
     margin: 0;
@@ -13,10 +13,11 @@ input, label {
 }
 
 :root {
-  --corPainel:  #1d075f;
-  --corLinkVisitado: #5434af;
-  --corFundo: #263136;
-  --corLetra: #e8e8e8;
+  --fundoPainel:  #1d075f;
+  --linkVisitado: #5434af;
+  --fundoCorpo: #263136;
+  --letraCorpo: #e8e8e8;
+  --fundoRodape: #1d07ff;
 }
 
 
@@ -24,10 +25,33 @@ input, label {
 /* Estilos para dispositivos móveis */
 
 body {
-    background-color: var(--corFundo);
-    color: var(--corLetra);
+    background-color: var(--fundoCorpo);
+    color: var(--letraCorpo);
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.conteudo {
+  margin: 40px 20px;
+  font-size: 16px;
+}
+
+ /*  ESPACO DA LOGO */
+
+label.logo {
+    display:block;
+    color: #ebe9e9;
+    font-size: 30px;
+    line-height: 100px;
+    padding: 0 85px;
+    font-weight: bold;
+    align-items: center;
+    background-color: #1d075f;
+}
+
+.lupa {
+  width: 30px;
+}
+
 
 /* BARRA DE PESQUISA*/
 
@@ -53,7 +77,7 @@ body {
   
 .botaoPesquisa {
   background: #3344dd;
-  color: var(--corLetra);
+  color: var(--letraCorpo);
   border: none;
   height: 44px;
   width: auto;
@@ -69,18 +93,11 @@ nav {
     width: 100%;
 }
 
-/* nav img {
-  position: absolute;
-  left: 220px;
-  top: 40px;
-  width: 30px;
-} */
-
 nav ul {
     position: fixed;
     width:100%;
     height: 100vh;
-    background: var(--corPainel);
+    background: var(--fundoPainel);
     top: 0px;
     left: -600px;
     text-align: center;
@@ -101,16 +118,16 @@ nav ul li a {
     border-radius: 3px;
     text-transform: uppercase;
 }
-a.active, a:hover {
+a:active, a:hover {
     background: none;
-    color: (--corLinkVisitado);
+     color: var(--linkVisitado);
 }
 
 /*  TRANSIÇÕES */
 
 /*  -- 1 -- */
 
-#Inav, #Ipesquisa{
+#Inav, #Ipesquisa {
   display: none;
 }
 
@@ -128,34 +145,54 @@ a.active, a:hover {
 }
 
 /*  -- 2 -- */
-/* 
- #Lpesquisa {
-  display: flex;
+
+#Lpesquisa {
+  float: right;
+  margin: 40px 10px ;
+  width: 50px;
+  padding: 5px;
+  border-radius: 100%;
   cursor: pointer;
-  margin: 10px;
+  background-color: #ffffff;
 }
- 
+
 #Ipesquisa:checked ~ #campoPesquisa { 
     top: 20px;
-} */
-
-
-/* ESPACO PARA LOGO */
-
-label.logo {
-    display:block;
-    color: #ebe9e9;
-    font-size: 30px;
-    line-height: 100px;
-    padding: 0 85px;
-    font-weight: bold;
-    align-items: center;
-    background-color: #1d075f;
 }
 
-.conteudo {
-  margin: 40px 20px;
-  font-size: 16px;
+/* UNIDADE DE MANGA */
+
+.manga {
+  width: 160px;
+  margin: 10px 5px;
+  display: inline-block;
+  text-align: center;
+}
+.capa {
+  border: 2px solid #6666dd;
+  border-radius: 5px;
+  width: 150px;
+}
+.capitulo {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 15px;
+  background-color: #95ffccc5;
+}
+.titulo {
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ffffff;
+  border: 2px solid #fff;
+  background-color: #1d075f;
+}
+/* RODAPE */
+
+.rodape {
+  width: 100%;
+  background-color: var(--fundoRodape);
+  border: 2px solid green;
 }
 
 /*   REPONSIVIDADE  *
@@ -214,7 +251,7 @@ label.logo {
     nav ul li a {
       font-size: 20px;
     }
-    a.active, a:hover {
+    a:active, a:hover {
       background: (--corLinkVisitado);
       transition: .5s;
     }
