@@ -1,27 +1,3 @@
-/* PADRONIZAÇÃO DA ESTILIZAÇÃO */
-
-body, main, footer,
-span, img, a, h1, h3,
-div, input, ul, li, button,
-input, label {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    outline: none;   
-}
-
-:root {
-  --fundoPainel:  #1d075f;
-  --linkVisitado: #5434af;
-  --fundoCorpo: #263136;
-  --letraCorpo: #e8e8e8;
-  --fundoRodape: #1d07ff;
-}
-
-
-
 /* Estilos para dispositivos móveis */
 
 body {
@@ -39,13 +15,12 @@ body {
 
 label.logo {
     display:block;
-    color: #ebe9e9;
     font-size: 30px;
     line-height: 100px;
     padding: 0 85px;
     font-weight: bold;
     align-items: center;
-    background-color: #1d075f;
+    background-color: var(--fundoPainel);
 }
 
 .lupa {
@@ -68,7 +43,7 @@ label.logo {
   left: 0px;
   padding: 0 20px;
   align-items: center;
-  background: #5665ed;
+  background: var(--fundoBarraPesquisa);
   transition: all .5s;
 }
 
@@ -80,9 +55,10 @@ label.logo {
 }
   
 .botaoPesquisa {
-  background: #3344dd;
-  color: var(--letraCorpo);
+  background: var(--fundoBotao);
+  color: #000000;
   border: none;
+  font-weight: 600;
   height: 44px;
   width: auto;
   padding: 15px 5px;
@@ -90,7 +66,7 @@ label.logo {
   align-items: center;
 }
 .botaoPesquisa:hover {
-  background: #2233cc;
+  background: var(--fundoBotaoHover);
 }
 
 /*  NAVEGAÇÃO LATERAL */
@@ -119,7 +95,7 @@ nav ul li {
     align-items: center;
 }
 nav ul li a {
-    color: #ebe9e9;
+    color: var(--link);
     font-size: 16px;
     padding: 10px;
     border-radius: 3px;
@@ -131,6 +107,11 @@ nav ul li a {
 a:active, a:hover {
     background: none;
      color: var(--linkVisitado);
+}
+.tituloAgrupamento {
+  border-bottom: 2px solid var(--bordaManga);
+  margin: 15px 0;
+  text-transform: uppercase;
 }
 
 /*  TRANSIÇÕES */
@@ -183,7 +164,7 @@ a:active, a:hover {
   text-align: center;
 }
 .capa {
-  border: 2px solid #6666dd;
+  border: 2px solid var(--bordaManga);
   border-radius: 5px;
   width: 150px;
 }
@@ -191,21 +172,52 @@ a:active, a:hover {
   font-size: 12px;
   padding: 6px 10px;
   border-radius: 15px;
-  background-color: #95ffccc5;
+  background-color: #2a757f;
+  color: var(--tituloManga);
 }
 .titulo {
   margin: 10px 0;
   padding: 2px;
   text-transform: uppercase;
   font-size: 14px;
-  color: #ffffff;
-  border: 2px solid #fff;
+  color: var(--tituloManga);
+  border: 2px solid var(--tituloManga);
   background-color: #1d075f;
 }
+
+  /* BOTOES E PAGINAS */
+  
+.botaoVerMais {
+  text-align: center;
+}
+.verMais {
+  padding: 10px 20px;
+  margin: 10px 0;
+  color: #000000;
+  font-weight: 600;
+  background: var(--fundoBotao);
+  border-radius: 15px;
+  border: 2px solid var(--fundoBotaoHover);
+    
+}
+.numeroPagina {
+  display: inline-block;
+  margin: 10px;
+}
+.pagina {
+  margin: 4px 2px;
+  padding: 5px ;
+  font-size: 18px;
+  background-color: var(--fundoCorpo);
+  color: var(--letraCorpo);
+  border-right: 2px solid var(--fundoBotao);
+}
+
 /* RODAPE */
 
 .rodape {
   width: 100%;
+  padding: 20px;
   background-color: var(--fundoRodape);
   border: 2px solid var(--fundoRodape);  
 }
@@ -228,33 +240,32 @@ a:active, a:hover {
     #Lpesquisa {
       float: left;
       position: absolute;
-      left: 150px;
+      left: 140px;
     }
     label.logo {
       font-size: 30px;
-      padding-left: 50px;
+      padding-left: 30px;
     }
     nav ul {
-      position: fixed;
+      position: static;
       display: block;
       float: right;
-      top: 99px;
-      height: 72px;
-      width: 60%;
-      left: 220px;
+      height: 40px;
+      width: 70%;
       font-size: 18px;
       
     }
     nav ul li {
+      position: static;
       display: inline-block;
-      margin: 8px 6px;
+      margin: 6px;
       padding: 0;
   }
     nav ul li a {
-      font-size: 18px;
+      font-size: 16px;
     }
     .subcategoria {
-      margin: 10px 0;
+      margin: 5px 0;
     }
     details {
       background: var(--fundoPainel); 

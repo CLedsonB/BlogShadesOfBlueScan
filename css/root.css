@@ -1,0 +1,30 @@
+body, main, footer,
+span, img, a, h1, h3,
+div, input, ul, li, button,
+input, label {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;   
+}
+
+:root {
+    
+    /* Presentes no index.html */
+    
+  --fundoPainel:  #2c0da1;
+  --fundoBarraPesquisa: #2e38b9;
+  --fundoBotao: #3ec6f9;
+  --fundoBotaoHover: #236f8b;
+  --link: #ebe9e9;
+  --linkVisitado: #662bff;
+  --fundoCorpo: #29292d;
+  --letraCorpo: #e8e8e8;
+  --bordaManga: #2b43ff;
+  --tituloManga : #ffffff;
+  --fundoRodape: #4077ff;
+  
+}
