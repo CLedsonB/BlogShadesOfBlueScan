@@ -1,14 +1,14 @@
 {
-  "mangas" : [
+  "mangas":[
   {
-    "titulo" : "Dr. Stone",
-    "imagem" : "./img/ds.jpeg",
-    "autor" : "Boshi",
-    "genero" : ["shounen","colegial","aventura"],
-    "tipo" : "mangá",
-    "concluido" : False,
-    "capitulos" : 80,
-    "sinopse" : "lorem ypsom, lorem ypsom, lorem ypsom, lorem ypsom, lorem ypsom, lorem ypsom"
+    "titulo":"Dr. Stone",
+    "imagem":"./img/ds.jpeg",
+    "autor":"Boshi",
+    "genero":["shounen","colegial","aventura"],
+    "tipo":"mangá",
+    "concluido":false,
+    "capitulos":80,
+    "sinopse":"lorem ypsom, lorem ypsom, lorem ypsom, lorem ypsom, lorem ypsom, lorem ypsom"
   }
   ]
 }

@@ -82,7 +82,7 @@ nav ul {
     height: 100vh;
     background: var(--fundoPainel);
     top: 0px;
-    left: -600px;
+    left: -777px;
     text-align: center;
     transition: all .5s;
 }
@@ -247,10 +247,12 @@ a:active, a:hover {
       padding-left: 30px;
     }
     nav ul {
-      position: static;
+      position: absolute;
+      top: 14px;
+      left: 240px;
       display: block;
       float: right;
-      height: 40px;
+      height: 30px;
       width: 70%;
       font-size: 18px;
       
@@ -271,7 +273,10 @@ a:active, a:hover {
       background: var(--fundoPainel); 
     }
     .bordaSubmenu {
+      position: absolute;
+      top: 54px;
       border: 1px solid #6a78ff;
+      background-color: var(--fundoPainel);
     }
 }
 
