@@ -252,7 +252,7 @@ a:active, a:hover {
       left: 240px;
       display: block;
       float: right;
-      height: 30px;
+      height: 80px;
       width: 70%;
       font-size: 18px;
       
@@ -278,6 +278,10 @@ a:active, a:hover {
       border: 1px solid #6a78ff;
       background-color: var(--fundoPainel);
     }
+    #Ipesquisa:checked ~ nav ul {
+      top: 90px;
+    }
+    
 }
 
 
