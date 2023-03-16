@@ -1,0 +1,23 @@
+html------------------
+
+<div class="botaoVerMais">
+	<a href="#">
+		<button class="verMais">Ver mais</button>
+	</a>	
+</div>
+
+css---------------------
+
+.botaoVerMais {
+  text-align: center;
+}
+.verMais {
+  padding: 10px 20px;
+  margin: 10px 0;
+  color: #000000;
+  font-weight: 600;
+  background: var(--fundoBotao);
+  border-radius: 15px;
+  border: 2px solid var(--fundoBotaoHover);   
+}
+
