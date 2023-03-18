@@ -1,0 +1,237 @@
+/*   REPONSIVIDADE  *
+ *                  *
+ * P  0px - 766px   *
+ * M 767px - 1022px *
+ * G 1023px -  +++  *
+ *                  *
+ ********************/
+
+
+/* Estilos para tablet */
+/* Estilos para notebook */
+/* Estilos para dispositivos móveis */
+
+body {
+    background-color: var(--fundoCorpo);
+    color: var(--letraCorpo);
+    font-family: 'Poppins', sans-serif;
+}
+
+.conteudo {
+  margin: 40px 20px;
+  font-size: 16px;
+}
+
+ /*  ESPACO DA LOGO */
+
+label.logo {
+    display:block;
+    font-size: 30px;
+    line-height: 100px;
+    padding: 0 85px;
+    font-weight: bold;
+    align-items: center;
+    background-color: var(--fundoPainel);
+}
+
+.lupa {
+  position: relative;
+  top: -4px;
+  left: -5px;
+  width: 30px;
+  height: 30px;
+}
+
+
+/* BARRA DE PESQUISA*/
+
+.campoPesquisa {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 80px;
+  top:-100px;
+  left: 0px;
+  padding: 0 20px;
+  align-items: center;
+  background: var(--fundoBarraPesquisa);
+  transition: all .5s;
+}
+
+.barraPesquisa {
+  width:80%;
+  height: 30px;
+  top: 50px;
+  padding: 20px;
+}
+  
+.botaoPesquisa {
+  background: var(--fundoBotao);
+  color: #000000;
+  border: none;
+  font-weight: 600;
+  height: 44px;
+  width: auto;
+  padding: 15px 5px;
+  text-align: center;
+  align-items: center;
+}
+.botaoPesquisa:hover {
+  background: var(--fundoBotaoHover);
+}
+
+/*  NAVEGAÇÃO LATERAL */
+
+nav {
+    height: 80px;
+    width: 100%;
+}
+
+nav ul {
+    position: fixed;
+    width:100%;
+    height: 100vh;
+    background: var(--fundoPainel);
+    top: 0px;
+    left: -777px;
+    text-align: center;
+    transition: all .5s;
+}
+
+nav ul li {
+    display: block;
+    margin: 50px 0;
+    padding-left: 90px;
+    line-height: 30px;
+    align-items: center;
+}
+nav ul li a {
+    color: var(--link);
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.subcategoria {
+  margin: 40px 0;
+}
+
+/*  TRANSIÇÕES */
+
+/*  -- 1 -- */
+
+#Inav, #Ipesquisa {
+    display: none;
+  }
+  
+  #Lnav {
+      font-size: 25px;
+      float: right;
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer;
+      display: block;
+  }
+  
+  #Inav:checked ~ ul {
+    left: -120px;
+  }
+  
+  /*  -- 2 -- */
+  
+  #Lpesquisa {
+    float: right;
+    text-align: center;  
+    margin: 25px 5px;
+    width: 45px;
+    height: 45px;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #ffffff;
+  }
+  
+  #Ipesquisa:checked ~ .campoPesquisa{
+      top: 10px;
+      position: static;
+      transition: all .5s;
+  }
+/* RODAPE */
+
+.rodape {
+    width: 100%;
+    padding: 20px;
+    background-color: var(--fundoRodape);
+    border: 2px solid var(--fundoRodape);  
+  }
+@media only screen and (min-width: 767px) {
+    #Lnav {
+      display: none;
+    }
+    #Lpesquisa {
+      float: left;
+      position: absolute;
+      left: 140px;
+    }
+    label.logo {
+      font-size: 30px;
+      padding-left: 30px;
+    }
+    nav ul {
+      position: absolute;
+      top: 14px;
+      left: 240px;
+      display: block;
+      float: right;
+      height: 80px;
+      width: 70%;
+      font-size: 18px;
+      
+    }
+    nav ul li {
+      position: static;
+      display: inline-block;
+      margin: 6px;
+      padding: 0;
+  }
+    nav ul li a {
+      font-size: 16px;
+    }
+    .subcategoria {
+      margin: 5px 0;
+    }
+    details {
+      background: var(--fundoPainel); 
+    }
+    .bordaSubmenu {
+      position: absolute;
+      top: 54px;
+      border: 1px solid #6a78ff;
+      background-color: var(--fundoPainel);
+    }
+    #Ipesquisa:checked ~ nav ul {
+      top: 90px;
+    }   
+}
+@media only screen and (min-width: 1023px) {
+    #Lnav {
+      display: none;
+    }
+    ul {
+      float: right;
+      margin-right: 20px;
+      
+    }
+    nav ul li {
+      display: inline-block;
+      line-height: 80px;
+      margin: 0 5px;
+    }
+    nav ul li a {
+      font-size: 20px;
+    }
+    a:active, a:hover {
+      background: (--corLinkVisitado);
+      transition: .5s;
+    }
+}

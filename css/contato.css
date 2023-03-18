@@ -1,0 +1,39 @@
+.listaRs {
+    display: block;
+}
+.unidadeRs {
+    text-align: center;
+    border: 1px solid #fff;
+    margin: 20px 0;
+    background: var(--unidadeRs);
+    padding: 12px 10px;
+    border-radius: 30px;
+}
+.unidadeTexto {
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    background: var(--unidadeTexto);
+    margin: 20px 0;
+    padding: 12px 10px;
+    border-radius: 15px;
+}
+.redeSociais, .textRedesSociais {
+    color: var(--link);
+    display: inline;
+}
+.textRedesSociais:hover {
+    color: #1900ff;
+}
+.seta {
+    font-size: 40px;
+    color: var(--letraCorpo);
+}
+.icone {
+    margin: 0 20px;
+    width: 40px;
+}
+@media only screen and (min-width: 767px) {
+}
+@media only screen and (min-width: 1023px) {
+}

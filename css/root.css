@@ -1,3 +1,5 @@
+ /* Presente em todos os arquivosa html */
+
 body, main, footer,
 span, img, a, h1, h3,
 div, input, ul, li, button,
@@ -12,9 +14,6 @@ input, label {
 }
 
 :root {
-    
-    /* Presentes no index.html */
-    
   --fundoPainel:  #2c0da1;
   --fundoBarraPesquisa: #2e38b9;
   --fundoBotao: #3ec6f9;
@@ -27,5 +26,6 @@ input, label {
   --tituloManga : #ffffff;
   --fundoRodape: #4077ff;
   --bordaCapitulo: #3c8e99;
-  
+  --unidadeRs: #247fb7;
+  --unidadeTexto: #506470;
 }
