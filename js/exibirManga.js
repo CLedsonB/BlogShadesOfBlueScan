@@ -22,8 +22,8 @@ window.onload = (Event) => {
         var meuP = document.createElement('p');
         meuP.classList.toggle('capitulo');
         
-        meuA1.href = "#";
-        meuA2.href = "#";
+        meuA1.href = "/infoManga.html";
+        meuA2.href = "/infoManga.html";
         meuA3.href = "#";
         meuImg.src = manga[i].imagem;
         meuImg.alt = manga[i].titulo;

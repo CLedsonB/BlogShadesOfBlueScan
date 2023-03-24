@@ -7,9 +7,11 @@
  ********************/
 
 
+/* Estilos para dispositivos móveis */
 /* Estilos para tablet */
 /* Estilos para notebook */
-/* Estilos para dispositivos móveis */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
 
 body {
     background-color: var(--fundoCorpo);
@@ -87,7 +89,7 @@ nav {
     width: 100%;
 }
 
-nav ul {
+nav .nav-lateral {
     position: fixed;
     width:100%;
     height: 100vh;
@@ -98,14 +100,14 @@ nav ul {
     transition: all .5s;
 }
 
-nav ul li {
+nav .nav-lateral li {
     display: block;
     margin: 50px 0;
     padding-left: 90px;
     line-height: 30px;
     align-items: center;
 }
-nav ul li a {
+nav .nav-lateral li a {
     color: var(--link);
     font-size: 16px;
     padding: 10px;
@@ -116,6 +118,10 @@ nav ul li a {
   margin: 40px 0;
 }
 
+.seta {
+  font-size: 40px;
+  color: var(--letraCorpo);
+}
 /*  TRANSIÇÕES */
 
 /*  -- 1 -- */
@@ -177,7 +183,7 @@ nav ul li a {
       font-size: 30px;
       padding-left: 30px;
     }
-    nav ul {
+    nav .nav-lateral {
       position: absolute;
       top: 14px;
       left: 240px;
@@ -188,13 +194,13 @@ nav ul li a {
       font-size: 18px;
       
     }
-    nav ul li {
+    nav .nav-lateral li {
       position: static;
       display: inline-block;
       margin: 6px;
       padding: 0;
   }
-    nav ul li a {
+    nav .nav-lateral li a {
       font-size: 16px;
     }
     .subcategoria {
@@ -217,12 +223,12 @@ nav ul li a {
     #Lnav {
       display: none;
     }
-    ul {
+    .nav-lateral {
       float: right;
       margin-right: 20px;
       
     }
-    nav ul li {
+    nav .nav-lateral li {
       display: inline-block;
       line-height: 80px;
       margin: 0 5px;
