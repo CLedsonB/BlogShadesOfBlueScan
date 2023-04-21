@@ -1,10 +1,14 @@
 window.onload = (Event) => {
-    var caixaConteudo = document.querySelector('.displayManga');
-
 
     var manga = json['mangas']
 
-    for(var i=0; i<= manga.length; i++) {
+    preencherDiv(manga);
+};
+
+function preencherDiv(manga) {
+    var caixaConteudo = document.querySelector('.displayManga');
+    console.log(manga)
+    for (var i = 0; i <= manga.length; i++) {
         var meuDiv = document.createElement('div');
         meuDiv.classList.toggle('manga');
 
@@ -21,7 +25,7 @@ window.onload = (Event) => {
         meuH3.classList.toggle('titulo');
         var meuP = document.createElement('p');
         meuP.classList.toggle('capitulo');
-        
+
         meuA1.href = "/infoManga.html";
         meuA2.href = "/infoManga.html";
         meuA3.href = "#";
@@ -29,7 +33,7 @@ window.onload = (Event) => {
         meuImg.alt = manga[i].titulo;
         meuImg.placeholder = manga[i].titulo;
         meuH3.textContent = manga[i].titulo;
-        meuP.textContent = "Capitulo "+ manga[i].capitulos;
+        meuP.textContent = "Capitulo " + manga[i].capitulos;
 
         caixaConteudo.appendChild(meuDiv);
         meuDiv.appendChild(meuA1);
@@ -39,7 +43,7 @@ window.onload = (Event) => {
         meuDiv.appendChild(meuA3);
         meuA3.appendChild(meuP);
     }
-};
+}
 // resultado final
 
 // <div class="manga">
