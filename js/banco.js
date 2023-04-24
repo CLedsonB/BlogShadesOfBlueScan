@@ -89,6 +89,16 @@ var json = {
     "concluido" : false,
     "capitulos" : 80,
     "sinopse" : "lorem ypsom, lorem ypsom, lorem ypsom, lorem ypsom, lorem ypsom, lorem ypsom"
+  },
+  {
+    "titulo" : "Teste",
+    "imagem" : "./img/sz.jpg",
+    "autor" : "Naruto",
+    "genero" : ["shounen","colegial","aventura"],
+    "tipo" : "mangá",
+    "concluido" : false,
+    "capitulos" : 80,
+    "sinopse" : "lorem ypsom, lorem ypsom, lorem ypsom, lorem ypsom, lorem ypsom, lorem ypsom"
   }
 
   ]
