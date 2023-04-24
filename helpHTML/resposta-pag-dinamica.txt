@@ -1,0 +1,57 @@
+Para exibir informações de acordo com o elemento clicado em uma segunda página da web, você precisará seguir alguns passos:
+
+Crie a segunda página da web onde as informações serão exibidas. Essa página deve ter um layout e design que permita a exibição de informações relevantes para cada elemento clicado.
+
+Adicione um identificador exclusivo a cada elemento clicável da primeira página da web. Isso pode ser feito usando o atributo "id" em HTML ou usando a classe CSS para selecionar o elemento.
+
+Adicione um evento de clique para cada elemento clicável. Quando o elemento é clicado, você pode usar JavaScript para coletar as informações relevantes do elemento clicado e enviá-las para a segunda página da web.
+
+Na segunda página da web, crie uma função JavaScript que receba as informações enviadas pela primeira página e exiba as informações relevantes no layout e design apropriados.
+
+Certifique-se de testar seu código para garantir que as informações sejam exibidas corretamente em cada clique.
+
+Segue um exemplo básico em HTML, JavaScript e CSS:
+
+<!-- Primeira página da web -->
+<div class="elemento" id="elemento1">Clique aqui para informações 1</div>
+<div class="elemento" id="elemento2">Clique aqui para informações 2</div>
+
+<script>
+  // Adicionando evento de clique para cada elemento
+  const elementos = document.querySelectorAll('.elemento');
+  elementos.forEach(elemento => {
+    elemento.addEventListener('click', () => {
+      // Enviando informações para a segunda página da web
+      window.location.href = `segundaPagina.html?elemento=${elemento.id}`;
+    });
+  });
+</script>
+
+<!-- Segunda página da web -->
+<div id="informacoes"></div>
+
+<script>
+  // Recebendo informações da primeira página da web
+  const urlParams = new URLSearchParams(window.location.search);
+  const elementoClicado = urlParams.get('elemento');
+  
+  // Exibindo informações relevantes na segunda página da web
+  const informacoes = document.getElementById('informacoes');
+  if (elementoClicado === 'elemento1') {
+    informacoes.textContent = 'Informações do elemento 1';
+  } else if (elementoClicado === 'elemento2') {
+    informacoes.textContent = 'Informações do elemento 2';
+  }
+</script>
+
+<!-- CSS -->
+<style>
+  .elemento {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+  }
+</style>
+
+
+Neste exemplo, cada elemento clicável é um elemento HTML com a classe "elemento" e um identificador exclusivo. Quando o elemento é clicado, o código JavaScript envia as informações para a segunda página da web usando a função window.location.href. Na segunda página da web, o código JavaScript recebe as informações da URL e exibe as informações relevantes no elemento HTML com o id "informacoes". O CSS é usado para estilizar os elementos clicáveis.
