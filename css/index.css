@@ -15,15 +15,15 @@ a:active, a:hover {
 
 .manga {
   width: 160px;
-  margin: 10px 5px;
+  margin: 5px;
   display: inline-block;
   text-align: center;
 }
 .capa {
   border: 2px solid var(--bordaManga);
   border-radius: 5px;
-  width: 160px;
-  height: 240px;
+  width: 140px;
+  height: 220px;
 }
 .capitulo:hover {
   color: #252525;
@@ -78,6 +78,4 @@ a:active, a:hover {
 
 
 /* Estilos para notebook */
-
-
 
