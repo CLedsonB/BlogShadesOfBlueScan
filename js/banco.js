@@ -3,8 +3,8 @@ var json = {
   {
     "titulo" : "Dr. Stone",
     "imagem" : "./img/ds.jpeg",
-    "autor" : "Boshi",
-    "genero" : ["shounen","colegial","aventura"],
+    "autor" : "Riichiro Inagaki",
+    "genero" : ["shounen","aventura"],
     "tipo" : "mangá",
     "concluido" : false,
     "capitulos" : 80,
@@ -13,7 +13,7 @@ var json = {
   {
     "titulo" : "One Piece",
     "imagem" : "./img/op.jpg",
-    "autor" : "Boshi",
+    "autor" : "Eiichiro Oda",
     "genero" : ["shounen","colegial","aventura"],
     "tipo" : "mangá",
     "concluido" : false,
@@ -23,7 +23,7 @@ var json = {
   {
     "titulo" : "Blue Exorcist",
     "imagem" : "./img/blueExor.jpg",
-    "autor" : "Boshi",
+    "autor" : "Katou Kazue",
     "genero" : ["shounen","colegial","aventura"],
     "tipo" : "mangá",
     "concluido" : false,
@@ -33,7 +33,7 @@ var json = {
   {
     "titulo" : "Death Note",
     "imagem" : "./img/deathNote.jpeg",
-    "autor" : "Boshi",
+    "autor" : "Tsugumi Ohba",
     "genero" : ["shounen","colegial","aventura"],
     "tipo" : "mangá",
     "concluido" : false,
@@ -43,7 +43,7 @@ var json = {
   {
     "titulo" : "gintama",
     "imagem" : "./img/gintama.jpg",
-    "autor" : "Boshi",
+    "autor" : "Hideaki Sorachi",
     "genero" : ["shounen","colegial","aventura"],
     "tipo" : "mangá",
     "concluido" : false,
@@ -53,7 +53,7 @@ var json = {
   {
     "titulo" : "jojo parte 4",
     "imagem" : "./img/joj.jpg",
-    "autor" : "Boshi",
+    "autor" : "Hirohiko Araki",
     "genero" : ["shounen","colegial","aventura"],
     "tipo" : "mangá",
     "concluido" : false,
@@ -63,7 +63,7 @@ var json = {
   {
     "titulo" : "one puch man",
     "imagem" : "./img/onp.jpg",
-    "autor" : "Boshi",
+    "autor" : "One",
     "genero" : ["shounen","colegial","aventura"],
     "tipo" : "mangá",
     "concluido" : false,
@@ -73,7 +73,7 @@ var json = {
   {
     "titulo" : "Steins Gate",
     "imagem" : "./img/steinsGate.jpg",
-    "autor" : "Boshi",
+    "autor" : "Jukki Hanada",
     "genero" : ["shounen","colegial","aventura"],
     "tipo" : "mangá",
     "concluido" : false,
@@ -83,24 +83,12 @@ var json = {
   {
     "titulo" : "Super Onze",
     "imagem" : "./img/sz.jpg",
-    "autor" : "Boshi",
+    "autor" : "Tenya Yabuno",
     "genero" : ["shounen","colegial","aventura"],
     "tipo" : "mangá",
     "concluido" : false,
     "capitulos" : 80,
     "sinopse" : "lorem ypsom, lorem ypsom, lorem ypsom, lorem ypsom, lorem ypsom, lorem ypsom"
   },
-  {
-    "titulo" : "Teste",
-    "imagem" : "./img/sz.jpg",
-    "autor" : "Naruto",
-    "genero" : ["shounen","colegial","aventura"],
-    "tipo" : "mangá",
-    "concluido" : false,
-    "capitulos" : 80,
-    "sinopse" : "lorem ypsom, lorem ypsom, lorem ypsom, lorem ypsom, lorem ypsom, lorem ypsom"
-  }
-
   ]
 };
-
