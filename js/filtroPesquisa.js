@@ -2,7 +2,7 @@ const buscaInput = document.querySelector('.barraPesquisa');
 const botaoPesquisa = document.querySelector('.botaoPesquisa');
 
 const filtrarLista = (valorInput, lista) => lista.filter( item => criterio(item, valorInput))
-const criterio = (item, valorInput) => item.autor.toLowerCase().includes(valorInput) || item.titulo.toLowerCase().includes(valorInput)
+const criterio = (item, valorInput) => item.autor.toLowerCase().includes(valorInput) || item.titulo.toLowerCase().includes(valorInput) || item.genero.includes(valorInput)
 
 const esconderLista = (listaDeDados, valorInput) => {
   listaDeDados
