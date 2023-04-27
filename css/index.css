@@ -20,15 +20,17 @@ a:active, a:hover {
   text-align: center;
 }
 .capa {
+  cursor: pointer;
   border: 2px solid var(--bordaManga);
   border-radius: 5px;
   width: 140px;
-  height: 220px;
+  height: 195px;
 }
 .capitulo:hover {
   color: #252525;
 }
 .capitulo {
+  cursor: pointer;
   width: 140px;
   font-size: 12px;
   padding: 6px 10px;
@@ -37,6 +39,7 @@ a:active, a:hover {
   color: var(--tituloManga);
 }
 .titulo {
+  cursor: pointer;
   margin: 10px 0;
   padding: 2px;
   text-transform: uppercase;
@@ -48,7 +51,7 @@ a:active, a:hover {
 
   /*  PAGINAS */
 
-  .numeroPagina {
+.numeroPagina {
   display: inline-block;
   margin: 10px;
 }
@@ -74,8 +77,5 @@ a:active, a:hover {
 
   /* Estilos para tablet */
 
-  
-
 
 /* Estilos para notebook */
-
