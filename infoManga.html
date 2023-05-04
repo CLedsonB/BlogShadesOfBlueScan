@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="css/hamburgers.css" type="text/css">
 
 
-	<title>Nome MANGA - Shades of Blue Scan</title>
+	<title></title>
 </head>
 <body>
     <input type="checkbox" id="Ipesquisa">
@@ -38,7 +38,7 @@
            <img src="icons/lupa.png" class="lupa" alt="Buscar">
            </label>
            
-           <label class="logo">Logo</label>
+           <a href="./index.html" class="linklogo"><label class="logo">Logo</label></a>
            <ul class="nav-lateral">
             <li><a href="./index.html">Inicio</a></li>
                <li>
@@ -57,8 +57,8 @@
                <li><a href="#">Entre em Contato</a></li>
            </ul>
        </nav>
-    <div class="conteudo">
-        <div class="bordaConteudo">
+    <div id="conteudo">
+        <!-- <div class="bordaConteudo">
           <div class="conterImagem">
             <img class="capaManga" src="img/blueExor.jpg" alt="Capa Do Mangá">
           </div>
@@ -67,8 +67,7 @@
             <p class="infoManga"><b>Gêneros : </b>Ação, Comédia dramática, Fantasia, Sobrenatural</p>
             <p class="infoManga"><b>Capítulos : </b>27</p>
             <p class="infoManga"><b>Estado : </b>Em Andamento</p>
-        </div>
-        <div id="info"></div>
+        </div> -->
     </div>
 </body>
 
@@ -77,15 +76,38 @@
 <script src="js/exibirManga.js"></script>
 <script>
 
- const urlParams = new URLSearchParams(window.location.search);
+document.addEventListener("DOMContentLoaded", function() {
+  const urlParams = new URLSearchParams(window.location.search);
   const elementoClicado = urlParams.get('manga');
 
-  const informacoes = document.getElementById('info');
-  if (elementoClicado === 'id0') {
-    informacoes.textContent = 'Informações do elemento 1';
-  } else if (elementoClicado === 'id1') {
-    informacoes.textContent = 'Informações do elemento 2';
-  }
+  const listaManga = json['mangas'];
+  const info = document.getElementById('conteudo');
+  var titulo = document.getElementsByTagName('title');
+
+  titulo.textContent = listaManga[0].tiitulo;
+  
+  //comparar elemnto clicado com banco de dados
+
+  //passar dados do banco de dados
+
+  //exibir informações com base no dado escolhido
+
+
+
+
+
+  // if (elementoClicado === 'id0') {
+  //   info.textContent = 'Informações do elemento 1';
+  // } else if (elementoClicado === 'id1') {
+  //   info.textContent = 'Informações do elemento 2';
+  // } else if (elementoClicado === 'id2') {
+  //   info.textContent = 'Informações do elemento 3';
+  // } else if (elementoClicado === 'id3') {
+  //   info.textContent = 'Informações do elemento 4';
+  // } else if (elementoClicado === 'id4') {
+  //   info.textContent = 'Informações do elemento 5';
+  // }
+});
 </script>
 
 <footer>

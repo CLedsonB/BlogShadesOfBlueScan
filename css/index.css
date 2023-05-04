@@ -25,6 +25,13 @@ a:active, a:hover {
   border-radius: 5px;
   width: 140px;
   height: 195px;
+  transition: all .2s;
+}
+.capa:hover{
+  width: 150px;
+  height: 205px;
+  border: 2px solid var(--bordaCapitulo);
+  transition: all .2s;
 }
 .capitulo:hover {
   color: #252525;
@@ -77,5 +84,8 @@ a:active, a:hover {
 
   /* Estilos para tablet */
 
+  
+
 
 /* Estilos para notebook */
+

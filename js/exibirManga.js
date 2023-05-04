@@ -1,17 +1,10 @@
 window.onload = (Event) => {
 
     var manga = json['mangas']
-
     preencherDiv(manga);
-    
-    const listaManga = document.querySelectorAll('div.manga');
-    for (let i = 0; i < listaManga.length; i++) {
-      const manga = listaManga[i];
-      manga.addEventListener('click', (Event) => {
-        window.location.href = `infoManga.html?manga=${manga.id}`;
-      }); 
-    }
-};
+
+    const listaManga = document.querySelectorAll('.manga');
+  };
 
 function preencherDiv(manga) {
     var caixaConteudo = document.querySelector('.displayManga');
@@ -19,8 +12,10 @@ function preencherDiv(manga) {
     for (var i = 0; i <= manga.length; i++) {
         const meuDiv = document.createElement('div');
         meuDiv.classList.toggle('manga');
-        meuDiv.id = 'id' + i
+        const titulo = manga[i].titulo
+        meuDiv.id = titulo.replace(/ /g, '_');
 
+        var meuA1 = document.createElement('a');
         var meuImg = document.createElement('img');
         meuImg.classList.toggle('capa');
         var meuH3 = document.createElement('h3');
@@ -35,10 +30,15 @@ function preencherDiv(manga) {
         meuP.textContent = "Capitulo " + manga[i].capitulos;
 
         caixaConteudo.appendChild(meuDiv);
-        meuDiv.appendChild(meuImg);
+        meuDiv.appendChild(meuA1);
+        meuA1.appendChild(meuImg);
         meuDiv.appendChild(meuH3);
         meuDiv.appendChild(meuP);
-    }
+
+        var id = document.getElementsByClassName('manga')[i].id;
+        meuA1.href = 'infoManga.html?manga=' + id;
+
+      }
 }
 
 // resultado final

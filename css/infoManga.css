@@ -13,3 +13,7 @@
 .capaManga {
     width: 280px;
 }
+.linklogo {
+    cursor: pointer;
+    color: var(--link);
+}
