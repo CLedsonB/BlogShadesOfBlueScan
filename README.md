@@ -14,5 +14,10 @@ Blog para a publicação de mangás, manhwas, manhua, webcomic e webtoon traduzi
 - *Jully* : Revisão, Edição
 - *Lui* : Desenho, Limpeza
 - *Mah* : Tradução
-- *Sayuri* : Edição, Tradução 
+- *Sayuri* : Edição, Tradução
 
+### Pendências
+- Página "Sobre nós"
+- Adicionar elementos dinamicamente na página "infoManga.html"
+- passar script do arquivo "infoManga.html" para "infomanga.js"
+- preencher lista de genero antes do ropdapé da pagina "index.html"
