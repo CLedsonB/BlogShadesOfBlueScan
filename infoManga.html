@@ -10,7 +10,7 @@
  	<meta name="description" content="Blog para a publicação de mangás, manhwas, manhua, webcomic e webtoon traduzidos de fã para fã">
  	<meta name="keywords" content="mangás, manhua, manhwas, fandom, yaio, webcomic, webtoon">
 	<meta name="robots" content="index,nofollow">
-	<meta name="rating" content="17 years"/>
+	<meta name="rating" content="19 years"/>
 	<meta name="copyright" content="© 2023 - CLedsonB"/>
   
   <link rel="stylesheet" href="css/root.css" type="text/css">
@@ -58,16 +58,9 @@
            </ul>
        </nav>
     <div id="conteudo">
-        <!-- <div class="bordaConteudo">
-          <div class="conterImagem">
-            <img class="capaManga" src="img/blueExor.jpg" alt="Capa Do Mangá">
-          </div>
-            <p class="infoManga"><b>Titulo : </b>Blue Exorcist / <i>Ao no Exorcist</i></p>
-            <p class="infoManga"><b>Autor : </b>Kazue Kato</p>
-            <p class="infoManga"><b>Gêneros : </b>Ação, Comédia dramática, Fantasia, Sobrenatural</p>
-            <p class="infoManga"><b>Capítulos : </b>27</p>
-            <p class="infoManga"><b>Estado : </b>Em Andamento</p>
-        </div> -->
+    </div>
+    <div class="info">
+      
     </div>
 </body>
 
@@ -84,7 +77,9 @@ document.addEventListener("DOMContentLoaded", function() {
   const info = document.getElementById('conteudo');
   var titulo = document.getElementsByTagName('title');
 
-  titulo.textContent = listaManga[0].tiitulo;
+  titulo.textContent = listaManga[0].titulo;
+
+  preencherDiv(listaManga);
   
   //comparar elemnto clicado com banco de dados
 
@@ -92,21 +87,68 @@ document.addEventListener("DOMContentLoaded", function() {
 
   //exibir informações com base no dado escolhido
 
+  function preencherDiv(manga) {
+    var caixaConteudo = document.querySelector('#conteudo');
 
+    
+var meuDiv1 = document.createElement('div');
+    meuDiv1.classList.toggle('bordaConteudo');
+    var meuDiv2 = document.createElement('div');
+    meuDiv2.classList.toggle('conterImagem');
+    var meuImg = document.createElement('img');
+    meuImg.classList.toggle('capaManga');
+    var meuP1 = document.createElement('p');
+    meuP1.classList.toggle('infoManga');
+    var meuP2 = document.createElement('p');
+    meuP2.classList.toggle('infoManga');
+    var meuP3 = document.createElement('p');
+    meuP3.classList.toggle('infoManga');
+    var meuP4 = document.createElement('p');
+    meuP4.classList.toggle('infoManga');
+    var meuP5 = document.createElement('p');
+    meuP5.classList.toggle('infoManga');
+    var meuB1 = document.createElement('b');
+    var meuB2 = document.createElement('b');
+    var meuB3 = document.createElement('b');
+    var meuB4 = document.createElement('b');
+    var meuB5 = document.createElement('b');
 
+    meuImg.src = manga[0].imagem;
+    meuImg.alt = "Capa do " + manga[0].titulo;
+    meuImg.placeholder = "Capa do " + manga[0].titulo;
+    
+    meuP1.textContent = "Titulo : "
+    meuP2.textContent = "Autor : "
+    meuP3.textContent = "Gênero : "
+    meuP4.textContent = "Capítulos : "
+    meuP5.textContent = "Estado : "
 
+    meuB1.textContent = manga[0].titulo;
+    meuB2.textContent = manga[0].autor;
+    meuB3.textContent = manga[0].genero;
+    meuB4.textContent = manga[0].capitulos;
+    meuB5.textContent = manga[0].concluido;
+    
+    caixaConteudo.appendChild(meuDiv1);
+    meuDiv1.appendChild(meuDiv2);
+    meuDiv2.appendChild(meuImg);
 
-  // if (elementoClicado === 'id0') {
-  //   info.textContent = 'Informações do elemento 1';
-  // } else if (elementoClicado === 'id1') {
-  //   info.textContent = 'Informações do elemento 2';
-  // } else if (elementoClicado === 'id2') {
-  //   info.textContent = 'Informações do elemento 3';
-  // } else if (elementoClicado === 'id3') {
-  //   info.textContent = 'Informações do elemento 4';
-  // } else if (elementoClicado === 'id4') {
-  //   info.textContent = 'Informações do elemento 5';
-  // }
+    meuDiv1.appendChild(meuP1);
+    meuP1.appendChild(meuB1);
+    
+    meuDiv1.appendChild(meuP2);
+    meuP2.appendChild(meuB2);
+    
+    meuDiv1.appendChild(meuP3);
+    meuP3.appendChild(meuB3);
+    
+    meuDiv1.appendChild(meuP4);
+    meuP4.appendChild(meuB4);
+    
+    meuDiv1.appendChild(meuP5);
+    meuP5.appendChild(meuB5);
+
+  }
 });
 </script>
 

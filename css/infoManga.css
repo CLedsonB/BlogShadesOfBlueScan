@@ -1,6 +1,6 @@
 .bordaConteudo {
-    margin: 20px;
-    padding: 15px;
+    margin: 40px;
+    padding: 40px;
     border: 2px solid #fff;
     border-radius: 20px;
 }
@@ -16,4 +16,10 @@
 .linklogo {
     cursor: pointer;
     color: var(--link);
+}
+.infoManga {
+    font-weight: bolder;
+}
+b {
+    font-weight: normal;
 }

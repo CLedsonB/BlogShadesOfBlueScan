@@ -22,6 +22,6 @@ const mostrarLista = (listaDeDados, valorInput) => {
    const listaManga = json['mangas']
 
    esconderLista(listaDeDivs, valorInput);
-   mostrarLista(listaManga, valorInput); 
+   mostrarLista(listaManga, valorInput);
   }
 )

@@ -2,6 +2,7 @@ window.onload = (Event) => {
 
     var manga = json['mangas']
     preencherDiv(manga);
+    // nomearId(manga);
 
     const listaManga = document.querySelectorAll('.manga');
   };
@@ -15,7 +16,8 @@ function preencherDiv(manga) {
         const titulo = manga[i].titulo
         meuDiv.id = titulo.replace(/ /g, '_');
 
-        var meuA1 = document.createElement('a');
+        const meuA1 = document.createElement('a');
+        const meuA2 = document.createElement('a');
         var meuImg = document.createElement('img');
         meuImg.classList.toggle('capa');
         var meuH3 = document.createElement('h3');
@@ -32,19 +34,20 @@ function preencherDiv(manga) {
         caixaConteudo.appendChild(meuDiv);
         meuDiv.appendChild(meuA1);
         meuA1.appendChild(meuImg);
-        meuDiv.appendChild(meuH3);
+        meuDiv.appendChild(meuA2);
+        meuA2.appendChild(meuH3);
         meuDiv.appendChild(meuP);
 
         var id = document.getElementsByClassName('manga')[i].id;
         meuA1.href = 'infoManga.html?manga=' + id;
-
+        meuA2.href = 'infoManga.html?manga=' + id;
       }
 }
 
-// resultado final
-
-// <div class="manga">
-// 		    <img class="capa" src="img/ds.jpeg" alt="Dr. Stone" placeholder="Dr. Stone">
-//          <h3 class="titulo">Dr. Stone</h3>
-//          <p class="capitulo" href="#">Capitulo 1</p>
-// </div>
+// function nomearId(manga) {
+//   for(var i = 0; i <= manga.length; i++) {
+//     var id = document.getElementsByClassName('manga')[i].id;
+//     meuA1.href = 'infoManga.html?manga=' + id;
+//     meuA2.href = 'infoManga.html?manga=' + id;
+//   }
+// }
