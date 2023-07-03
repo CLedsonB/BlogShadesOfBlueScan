@@ -28,14 +28,15 @@ body {
 
 label.logo {
     display:block;
-    font-size: 30px;
-    line-height: 100px;
-    padding: 0 85px;
+    height: 95px;
     font-weight: bold;
     align-items: center;
     background-color: var(--fundoPainel);
 }
-
+#img-logo {
+  width: 300px;
+  padding: 20px;
+}
 .lupa {
   position: relative;
   top: -4px;
@@ -170,14 +171,15 @@ nav .nav-lateral li a {
     background-color: var(--fundoRodape);
     border: 2px solid var(--fundoRodape);  
   }
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
     #Lnav {
       display: none;
     }
     #Lpesquisa {
       float: left;
       position: absolute;
-      left: 140px;
+      left: 330px;
+      z-index: 3;
     }
     label.logo {
       font-size: 30px;
@@ -186,7 +188,7 @@ nav .nav-lateral li a {
     nav .nav-lateral {
       position: absolute;
       top: 14px;
-      left: 240px;
+      left: 340px;
       display: block;
       float: right;
       height: 80px;
@@ -197,7 +199,7 @@ nav .nav-lateral li a {
     nav .nav-lateral li {
       position: static;
       display: inline-block;
-      margin: 6px;
+      margin: 5px;
       padding: 0;
   }
     nav .nav-lateral li a {
@@ -219,7 +221,7 @@ nav .nav-lateral li a {
       top: 90px;
     }   
 }
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 1024px) {
     #Lnav {
       display: none;
     }
