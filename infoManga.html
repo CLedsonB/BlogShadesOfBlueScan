@@ -35,7 +35,7 @@
                </span>
            </label>
            <label for="Ipesquisa" id="Lpesquisa">
-           <img src="icons/lupa.png" class="lupa" alt="Buscar">
+           <img src="icons/lupa.svg" class="lupa" alt="Buscar">
            </label>
            
            <a href="./index.html" class="linklogo"><label class="logo">Logo</label></a>
@@ -75,16 +75,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const listaManga = json['mangas'];
   const info = document.getElementById('conteudo');
-  var titulo = document.getElementsByTagName('title');
 
+  // mudança de titulo
+  var titulo = document.getElementsByTagName('title');
   titulo.textContent = listaManga[0].titulo;
 
   preencherDiv(listaManga);
   
+  // tarefas da funcao preencherDiv()
+
   //comparar elemnto clicado com banco de dados
-
   //passar dados do banco de dados
-
   //exibir informações com base no dado escolhido
 
   function preencherDiv(manga) {
@@ -150,6 +151,12 @@ var meuDiv1 = document.createElement('div');
 
   }
 });
+
+
+
+console.log(listaManga.indexOf(elementoClicado))
+
+
 </script>
 
 <footer>
