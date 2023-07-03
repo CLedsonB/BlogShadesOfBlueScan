@@ -71,21 +71,10 @@ a:active, a:hover {
   border-right: 2px solid var(--fundoBotao);
 }
 
-
-
-/*   REPONSIVIDADE  *
- *                  *
- * P  0px - 766px   *
- * M 767px - 1022px *
- * G 1023px -  +++  *
- *                  *
- ********************/
-
-
   /* Estilos para tablet */
-
-  
-
+@media only screen and (min-width: 768px) {
+}
 
 /* Estilos para notebook */
-
+@media only screen and (min-width: 1024px) {
+}
