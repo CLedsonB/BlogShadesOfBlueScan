@@ -55,6 +55,12 @@ a:active, a:hover {
   border: 2px solid var(--tituloManga);
   background-color: #1d075f;
 }
+  /* SETA VOLTAR */
+
+.seta-voltar {
+    color: #fff;
+    font-size: 30px;
+}
 
   /*  PAGINAS */
 

@@ -1,0 +1,52 @@
+<div id="livros">
+  <ul id="lista-livros">
+    <!-- Lista de livros será gerada aqui -->
+  </ul>
+  <div id="detalhes-livro">
+    <!-- Detalhes do livro serão exibidos aqui -->
+  </div>
+</div>
+<script>
+    // Dados dos livros
+const livros = [
+  { id: 1, titulo: "Livro 1", autor: "Autor 1", descricao: "Descrição do livro 1" },
+  { id: 2, titulo: "Livro 2", autor: "Autor 2", descricao: "Descrição do livro 2" },
+  { id: 3, titulo: "Livro 3", autor: "Autor 3", descricao: "Descrição do livro 3" },
+];
+
+// Função para gerar a lista de livros
+function gerarListaLivros() {
+  const listaLivros = document.getElementById("lista-livros");
+  listaLivros.innerHTML = ""; // Limpa a lista de livros
+
+  livros.forEach((livro) => {
+    const itemLista = document.createElement("li");
+    itemLista.textContent = livro.titulo;
+    itemLista.addEventListener("click", () => {
+      exibirDetalhesLivro(livro);
+    });
+    listaLivros.appendChild(itemLista);
+  });
+}
+
+// Função para exibir os detalhes do livro
+function exibirDetalhesLivro(livro) {
+  const detalhesLivro = document.getElementById("detalhes-livro");
+  detalhesLivro.innerHTML = ""; // Limpa os detalhes do livro
+
+  const titulo = document.createElement("h2");
+  titulo.textContent = livro.titulo;
+  detalhesLivro.appendChild(titulo);
+
+  const autor = document.createElement("p");
+  autor.textContent = `Autor: ${livro.autor}`;
+  detalhesLivro.appendChild(autor);
+
+  const descricao = document.createElement("p");
+  descricao.textContent = livro.descricao;
+  detalhesLivro.appendChild(descricao);
+}
+
+// Gera a lista de livros
+gerarListaLivros();
+</script>
