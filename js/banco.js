@@ -169,6 +169,6 @@ var json = {
     "concluido" : "Sim",
     "capitulos" : 232,
     "sinopse" : "A história acompanha Kiyo Takamine, um estudante japonês de 14 anos extremamente inteligente, mas socialmente isolado e entediado com o mundo. Sua vida muda drasticamente quando seu pai lhe envia um presente inusitado vindo da Inglaterra: um garotinho loiro chamado Zatch Bell. Zatch não é uma criança comum; ele é um Mamodo, um ser de outro mundo com poderes sobrenaturais. A cada mil anos, 100 crianças Mamodo são enviadas à Terra para lutarem entre si. O último sobrevivente se tornará o Rei do Mundo Mamodo."
-  },
+  }
   ]
 };
